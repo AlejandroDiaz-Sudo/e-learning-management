@@ -1,0 +1,44 @@
+
+
+<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
+
+</mat-sidenav-container>
+
+
+<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose><p>Closed due to: {{reason}}</p>
+
+  <app-profile></app-profile>
+  
+  <h1>Menu</h1>
+
+  <div>
+      <a >Usuarios</a>
+  </div>
+
+  <div>
+      <a >Maestros</a>
+  </div>
+  <div>
+      <a >Grados</a>
+  </div>
+  <div>
+    <a >Materias</a>
+  </div>
+  
+  <div>
+    <a >Alumnos</a>
+  </div>
+  
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p><button mat-button (click)="close('toggle button')">Cerrar</button></p>
+</mat-sidenav>
+
+
+<p><button mat-button (click)="sidenav.open()">Menu</button></p>

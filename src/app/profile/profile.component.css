@@ -1,0 +1,18 @@
+
+
+
+  .example-card {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+  }
+  
+  .example-header-image {
+    
+    background-size: cover;
+    
+    
+  }
+  

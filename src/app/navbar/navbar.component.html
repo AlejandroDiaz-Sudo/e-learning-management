@@ -1,0 +1,42 @@
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <a class="navbar-brand">{{app_name}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="/home">Home
+          </a>
+        </li>
+        <li *ngIf="!isLoggerd" class="nav-item" >
+          <a class="nav-link" routerLink="/register">Register</a>
+        </li>
+
+        <li *ngIf="!isnotLoggerd" class="nav-item" >
+          <a class="nav-link" routerLink="/privado">Admin</a>
+        </li>
+        
+        <li *ngIf="!isLoggerd" class="nav-item" >
+          <a class="nav-link" routerLink="/login">Login
+          </a>
+        </li>
+        <li *ngIf="!isnotLoggerd" class="nav-item">
+          <a (click)=" OnClickLogOut();" class="nav-link" >Logout
+            
+          </a>
+
+        </li>
+
+        
+      </ul>
+    </div>
+  </nav>
+  
+
+  
